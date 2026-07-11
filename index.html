@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Primary SEO -->
+<title>Jasa Pembuatan Website & Aplikasi Custom Bali | Nexy Metrhon Batubulan Gianyar</title>
+<meta name="description" content="Nexy Metrhon — jasa pembuatan website dan aplikasi custom profesional di Batubulan, Gianyar, Bali. Desain interaktif, fitur sesuai kebutuhan, harga terjangkau, pengerjaan cepat. Rating 5.0 di Google.">
+<meta name="keywords" content="jasa pembuatan website bali, website designer gianyar, jasa website batubulan, buat website murah bali, aplikasi custom bali, web developer sukawati, nexy metrhon">
+<meta name="author" content="Nexy Metrhon">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://nexymetrhon.com/">
+<meta name="geo.region" content="ID-BA">
+<meta name="geo.placename" content="Batubulan, Gianyar, Bali">
+<meta name="geo.position" content="-8.5875;115.2917">
+<meta name="ICBM" content="-8.5875, 115.2917">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="id_ID">
+<meta property="og:site_name" content="Nexy Metrhon">
+<meta property="og:title" content="Jasa Pembuatan Website & Aplikasi Custom Bali | Nexy Metrhon">
+<meta property="og:description" content="Website dan aplikasi custom profesional, interaktif, terjangkau, dan cepat dikerjakan. Studio digital di Batubulan, Gianyar, Bali.">
+<meta property="og:url" content="https://nexymetrhon.com/">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Jasa Pembuatan Website & Aplikasi Custom Bali | Nexy Metrhon">
+<meta name="twitter:description" content="Website dan aplikasi custom profesional, interaktif, terjangkau, dan cepat dikerjakan di Batubulan, Gianyar, Bali.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- Structured Data: LocalBusiness -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Nexy Metrhon",
+  "image": "https://nexymetrhon.com/og-image.jpg",
+  "description": "Jasa pembuatan website dan aplikasi custom profesional, interaktif, dengan biaya terjangkau dan pengerjaan cepat.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Jl. Pratu Made Rambug Gg. Medori No.32",
+    "addressLocality": "Batubulan, Kec. Sukawati",
+    "addressRegion": "Kabupaten Gianyar, Bali",
+    "postalCode": "80582",
+    "addressCountry": "ID"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -8.5875,
+    "longitude": 115.2917
+  },
+  "telephone": "+62-858-5764-3401",
+  "priceRange": "$$",
+  "areaServed": "Bali, Indonesia",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "2"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "08:30",
+    "closes": "17:00"
+  }
+}
+</script>
+<style>
+  :root{
+    --bg:#0e0f13;
+    --surface:#171a21;
+    --surface-2:#1f232c;
+    --gold:#ffc845;
+    --gold-dim:#a9862f;
+    --teal:#35e0b0;
+    --text:#f3f1e9;
+    --muted:#8b909b;
+    --line:rgba(255,255,255,0.09);
+    --line-strong:rgba(255,255,255,0.16);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:'Inter',sans-serif;
+    overflow-x:hidden;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.display{font-family:'Space Grotesk',sans-serif;}
+  .mono{font-family:'JetBrains Mono',monospace;}
+  a{color:inherit;text-decoration:none;}
+
+  /* ambient grid background — circuit lines / terrace contours */
+  .grid-bg{
+    position:fixed; inset:0; z-index:0; pointer-events:none;
+    background-image:
+      linear-gradient(var(--line) 1px, transparent 1px),
+      linear-gradient(90deg, var(--line) 1px, transparent 1px);
+    background-size:64px 64px;
+    mask-image:radial-gradient(ellipse 80% 60% at 50% 0%, black 40%, transparent 90%);
+    opacity:0.5;
+  }
+  .glow-orb{
+    position:fixed; z-index:0; pointer-events:none; border-radius:50%;
+    filter:blur(90px); opacity:0.22;
+  }
+  .orb-1{width:520px;height:520px; background:var(--gold); top:-180px; left:-140px;}
+  .orb-2{width:460px;height:460px; background:var(--teal); bottom:-160px; right:-120px;}
+
+  .wrap{position:relative; z-index:1; max-width:1120px; margin:0 auto; padding:0 28px;}
+
+  /* nav */
+  nav{
+    position:sticky; top:0; z-index:50;
+    backdrop-filter:blur(14px);
+    background:rgba(14,15,19,0.72);
+    border-bottom:1px solid var(--line);
+  }
+  nav .wrap{display:flex; align-items:center; justify-content:space-between; padding:18px 28px;}
+  .brand{display:flex; align-items:center; gap:10px; font-family:'Space Grotesk'; font-weight:700; font-size:1.05rem; letter-spacing:0.01em;}
+  .brand-mark{
+    width:34px;height:34px;border-radius:9px;
+    background:linear-gradient(135deg,var(--gold),var(--teal));
+    display:flex;align-items:center;justify-content:center;
+    color:#0e0f13; font-weight:700; font-size:0.95rem;
+  }
+  .navlinks{display:flex; gap:32px; font-size:0.9rem; color:var(--muted);}
+  .navlinks a:hover{color:var(--text);}
+  .nav-cta{
+    padding:9px 18px; border-radius:999px; border:1px solid var(--gold);
+    color:var(--gold); font-size:0.86rem; font-weight:500; transition:all .25s ease;
+    white-space:nowrap;
+  }
+  .nav-cta:hover{background:var(--gold); color:#0e0f13;}
+  .nav-right{display:flex; align-items:center; gap:14px;}
+
+  .lang-toggle{
+    display:flex; align-items:center; border:1px solid var(--line-strong); border-radius:999px;
+    padding:3px; gap:2px; flex-shrink:0; background:rgba(255,255,255,0.02);
+  }
+  .lang-opt{
+    padding:6px 12px; border-radius:999px; font-family:'JetBrains Mono'; font-size:0.74rem;
+    color:var(--muted); cursor:pointer; transition:all .25s ease; letter-spacing:0.03em;
+  }
+  .lang-opt.active{background:var(--teal); color:#0e0f13; font-weight:600;}
+  .lang-opt:not(.active):hover{color:var(--text);}
+
+  .nav-toggle{
+    display:none; width:38px; height:38px; border-radius:9px; border:1px solid var(--line-strong);
+    background:transparent; align-items:center; justify-content:center; flex-direction:column; gap:4px;
+    cursor:pointer; flex-shrink:0;
+  }
+  .nav-toggle span{width:16px; height:2px; background:var(--text); transition:transform .3s ease, opacity .3s ease;}
+  .nav-toggle.open span:nth-child(1){transform:translateY(6px) rotate(45deg);}
+  .nav-toggle.open span:nth-child(2){opacity:0;}
+  .nav-toggle.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg);}
+  .mobile-menu{
+    max-height:0; overflow:hidden; border-bottom:1px solid transparent;
+    transition:max-height .35s ease, border-color .35s ease;
+    background:rgba(14,15,19,0.96);
+  }
+  .mobile-menu.open{max-height:260px; border-color:var(--line);}
+  .mobile-menu .wrap{display:flex; flex-direction:column; padding:8px 28px 20px; gap:4px;}
+  .mobile-menu a{padding:12px 4px; font-size:0.95rem; color:var(--muted); border-bottom:1px solid var(--line);}
+  .mobile-menu a:hover{color:var(--text);}
+  @media (max-width:720px){
+    .navlinks{display:none;}
+    .nav-toggle{display:flex;}
+    .nav-cta{padding:8px 14px; font-size:0.8rem;}
+  }
+
+  /* hero */
+  .hero{padding:88px 0 60px; position:relative;}
+  .hero-grid{display:grid; grid-template-columns:1.1fr 0.9fr; gap:56px; align-items:center;}
+  @media (max-width:900px){ .hero-grid{grid-template-columns:1fr;} }
+
+  .eyebrow{
+    display:inline-flex; align-items:center; gap:8px;
+    font-family:'JetBrains Mono'; font-size:0.76rem; letter-spacing:0.08em; text-transform:uppercase;
+    color:var(--teal); border:1px solid rgba(53,224,176,0.35); background:rgba(53,224,176,0.06);
+    padding:6px 14px; border-radius:999px; margin-bottom:22px;
+    animation:eyebrow-bounce 3.2s ease-in-out infinite;
+  }
+  @keyframes eyebrow-bounce{0%,100%{transform:translateY(0);}50%{transform:translateY(-5px);}}
+  .eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--teal); box-shadow:0 0 8px var(--teal); animation:pulse-dot 1.8s infinite;}
+  @keyframes pulse-dot{0%,100%{opacity:1;}50%{opacity:0.3;}}
+
+  /* word-by-word hero title reveal */
+  .word-anim{display:inline-block; opacity:0; transform:translateY(24px) rotate(2deg); filter:blur(4px);
+    animation:word-in 0.7s cubic-bezier(.2,.7,.2,1) forwards;}
+  @keyframes word-in{to{opacity:1; transform:translateY(0) rotate(0deg); filter:blur(0);}}
+
+  /* floating ambient decoration */
+  .float-dot{
+    position:absolute; border-radius:50%; pointer-events:none; z-index:0;
+    animation:dot-float 6s ease-in-out infinite;
+  }
+  @keyframes dot-float{0%,100%{transform:translateY(0) translateX(0);}50%{transform:translateY(-22px) translateX(10px);}}
+  .fd-1{width:10px;height:10px; background:var(--gold); top:14%; left:6%; opacity:0.5; animation-duration:5s;}
+  .fd-2{width:7px;height:7px; background:var(--teal); top:60%; left:2%; opacity:0.45; animation-duration:7s; animation-delay:1s;}
+  .fd-3{width:14px;height:14px; border:2px solid var(--teal); background:transparent; top:20%; right:5%; opacity:0.4; animation-duration:8s; animation-delay:0.5s;}
+  .fd-4{width:8px;height:8px; background:var(--gold); bottom:10%; right:10%; opacity:0.5; animation-duration:6.5s; animation-delay:1.5s;}
+
+  .hero h1{
+    font-size:clamp(2.4rem, 5vw, 3.6rem); line-height:1.06; font-weight:700; letter-spacing:-0.02em;
+    margin-bottom:20px;
+  }
+  .hero h1 .accent{color:var(--gold);}
+  .hero p.lede{
+    font-size:1.08rem; color:var(--muted); max-width:480px; line-height:1.65; margin-bottom:34px;
+  }
+  .hero-actions{display:flex; gap:14px; flex-wrap:wrap; margin-bottom:38px;}
+  .btn{
+    padding:14px 26px; border-radius:10px; font-weight:600; font-size:0.94rem;
+    display:inline-flex; align-items:center; gap:8px; transition:all .25s cubic-bezier(.2,.7,.3,1);
+    cursor:pointer; border:1px solid transparent;
+  }
+  .btn-primary{background:var(--gold); color:#161207;}
+  .btn-primary:hover{transform:translateY(-3px); box-shadow:0 14px 28px -10px rgba(255,200,69,0.45);}
+  .btn-ghost{border:1px solid var(--line-strong); color:var(--text);}
+  .btn-ghost:hover{border-color:var(--teal); color:var(--teal); transform:translateY(-3px);}
+
+  .hero-meta{display:flex; gap:28px; flex-wrap:wrap;}
+  .meta-item{display:flex; flex-direction:column; gap:2px;}
+  .meta-num{font-family:'Space Grotesk'; font-size:1.4rem; font-weight:700; color:var(--gold);}
+  .meta-label{font-size:0.78rem; color:var(--muted); font-family:'JetBrains Mono';}
+
+  /* signature: floating profile card */
+  .card-stage{position:relative; height:460px; display:flex; align-items:center; justify-content:center;}
+  .profile-card{
+    width:min(340px, 100%); background:linear-gradient(160deg, var(--surface), var(--surface-2));
+    border:1px solid var(--line-strong); border-radius:20px; padding:26px;
+    box-shadow:0 30px 70px -25px rgba(0,0,0,0.7);
+    animation:float 5.5s ease-in-out infinite;
+    position:relative; overflow:hidden;
+  }
+  .profile-card::before{
+    content:''; position:absolute; inset:-1px; border-radius:20px; padding:1px;
+    background:conic-gradient(from 0deg, var(--gold), transparent 30%, var(--teal), transparent 70%, var(--gold));
+    -webkit-mask:linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite:xor; mask-composite:exclude;
+    animation:spin 6s linear infinite; opacity:0.6;
+  }
+  @keyframes spin{to{transform:rotate(360deg);}}
+  @keyframes float{0%,100%{transform:translateY(0) rotate(-1.2deg);}50%{transform:translateY(-14px) rotate(1deg);}}
+
+  .pc-top{display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:18px; position:relative; z-index:1;}
+  .pc-avatar{
+    width:52px;height:52px;border-radius:14px; background:linear-gradient(135deg,var(--gold),var(--teal));
+    display:flex;align-items:center;justify-content:center; font-weight:700; color:#12100a; font-family:'Space Grotesk';
+  }
+  .pc-views{font-family:'JetBrains Mono'; font-size:0.72rem; color:var(--muted); text-align:right;}
+  .pc-name{font-family:'Space Grotesk'; font-weight:700; font-size:1.2rem; margin-bottom:4px; position:relative; z-index:1;}
+  .pc-role{font-size:0.85rem; color:var(--muted); margin-bottom:14px; position:relative; z-index:1;}
+  .pc-rating{display:flex; align-items:center; gap:8px; margin-bottom:18px; position:relative; z-index:1;}
+  .stars{color:var(--gold); letter-spacing:2px; font-size:0.95rem;}
+  .pc-rating-num{font-family:'JetBrains Mono'; font-weight:500; font-size:0.85rem;}
+  .pc-rating-count{color:var(--muted); font-size:0.8rem;}
+  .pc-divider{height:1px; background:var(--line); margin:16px 0; position:relative; z-index:1;}
+  .pc-row{display:flex; justify-content:space-between; font-size:0.78rem; color:var(--muted); margin-bottom:8px; position:relative; z-index:1; font-family:'JetBrains Mono';}
+  .pc-row b{color:var(--text); font-family:'Inter'; font-weight:600;}
+  .pc-status{
+    display:inline-flex; align-items:center; gap:6px; font-size:0.76rem; color:#ff8a7a;
+    background:rgba(255,138,122,0.1); border:1px solid rgba(255,138,122,0.25);
+    padding:4px 10px; border-radius:999px; margin-top:10px; position:relative; z-index:1;
+  }
+  .pc-status .dot{width:5px;height:5px;border-radius:50%;background:#ff8a7a;}
+
+  /* sections */
+  section{padding:100px 0; position:relative;}
+  .section-label{
+    font-family:'JetBrains Mono'; font-size:0.78rem; letter-spacing:0.1em; text-transform:uppercase;
+    color:var(--teal); margin-bottom:14px;
+  }
+  .section-title{font-size:clamp(1.7rem,3vw,2.3rem); font-weight:700; letter-spacing:-0.01em; margin-bottom:16px;}
+  .section-sub{color:var(--muted); max-width:600px; line-height:1.6; font-size:1rem;}
+
+  .reveal{opacity:0; transform:translateY(34px); transition:opacity .8s cubic-bezier(.2,.7,.2,1), transform .8s cubic-bezier(.2,.7,.2,1);}
+  .reveal.in{opacity:1; transform:translateY(0);}
+
+  /* about */
+  .about-box{
+    margin-top:40px; background:var(--surface); border:1px solid var(--line);
+    border-radius:18px; padding:36px; position:relative; overflow:hidden;
+  }
+  .about-box::after{
+    content:'"'; position:absolute; top:-10px; right:24px; font-family:'Space Grotesk'; font-size:8rem;
+    color:var(--gold); opacity:0.08; line-height:1;
+  }
+  .about-box p{font-size:1.05rem; line-height:1.75; color:var(--text); position:relative; z-index:1; max-width:640px;}
+  .about-sign{margin-top:22px; display:flex; align-items:center; gap:10px; color:var(--muted); font-size:0.85rem; position:relative; z-index:1;}
+  .about-sign span{color:var(--gold); font-weight:600;}
+
+  /* services */
+  .grid-3{display:grid; grid-template-columns:repeat(3,1fr); gap:22px; margin-top:44px;}
+  @media (max-width:820px){.grid-3{grid-template-columns:1fr;}}
+  .service-card{
+    background:var(--surface); border:1px solid var(--line); border-radius:16px; padding:30px;
+    transition:transform .3s ease, border-color .3s ease, background .3s ease;
+  }
+  .service-card:hover{transform:translateY(-6px); border-color:rgba(255,200,69,0.4); background:var(--surface-2);}
+  .service-card:hover .service-icon{transform:rotate(-12deg) scale(1.12); background:rgba(255,200,69,0.18);}
+  .service-icon{
+    width:44px;height:44px;border-radius:12px; background:rgba(255,200,69,0.1); border:1px solid rgba(255,200,69,0.3);
+    display:flex; align-items:center; justify-content:center; margin-bottom:20px; color:var(--gold); font-size:1.2rem;
+    transition:transform .35s cubic-bezier(.2,.7,.3,1.4), background .3s ease;
+  }
+  .service-card h3{font-size:1.1rem; margin-bottom:10px; font-weight:600;}
+  .service-card p{color:var(--muted); font-size:0.92rem; line-height:1.6;}
+
+  /* stats strip */
+  .stats-strip{
+    display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--line);
+    border:1px solid var(--line); border-radius:16px; overflow:hidden; margin-top:10px;
+  }
+  @media (max-width:700px){.stats-strip{grid-template-columns:repeat(2,1fr);}}
+  .stat-cell{background:var(--surface); padding:30px 24px; text-align:center; transition:transform .3s ease, background .3s ease;}
+  .stat-cell:hover{transform:scale(1.05); background:var(--surface-2);}
+  .stat-num{font-family:'Space Grotesk'; font-size:2rem; font-weight:700; color:var(--gold); margin-bottom:6px;}
+  .stat-label{font-size:0.8rem; color:var(--muted);}
+
+  /* reviews */
+  .grid-2{display:grid; grid-template-columns:1fr 1fr; gap:22px; margin-top:44px;}
+  @media (max-width:760px){.grid-2{grid-template-columns:1fr;}}
+  .review-card{
+    background:var(--surface); border:1px solid var(--line); border-radius:16px; padding:28px;
+    transition:transform .3s ease, border-color .3s ease;
+  }
+  .review-card:hover{transform:translateY(-5px); border-color:rgba(53,224,176,0.4);}
+  .review-top{display:flex; align-items:center; gap:12px; margin-bottom:16px;}
+  .review-avatar{
+    width:42px;height:42px;border-radius:50%; background:var(--surface-2); border:1px solid var(--line-strong);
+    display:flex; align-items:center; justify-content:center; font-family:'Space Grotesk'; font-weight:600; color:var(--teal);
+  }
+  .review-name{font-weight:600; font-size:0.95rem;}
+  .review-sub{font-size:0.76rem; color:var(--muted);}
+  .review-stars{color:var(--gold); font-size:0.85rem; margin-bottom:10px; letter-spacing:2px;}
+  .review-text{color:var(--text); font-size:0.94rem; line-height:1.6;}
+  .review-tag{font-size:0.72rem; color:var(--muted); margin-top:14px; font-family:'JetBrains Mono';}
+
+  /* location */
+  .location-grid{display:grid; grid-template-columns:1fr 1fr; gap:28px; margin-top:44px; align-items:stretch;}
+  @media (max-width:860px){.location-grid{grid-template-columns:1fr;}}
+
+  .address-stage{
+    background:radial-gradient(circle at 50% 38%, rgba(53,224,176,0.09), transparent 60%), var(--surface);
+    border:1px solid var(--line); border-radius:16px; min-height:340px;
+    display:flex; flex-direction:column; align-items:center; justify-content:center; gap:30px; padding:32px;
+    position:relative; overflow:hidden;
+  }
+  .radar{position:relative; width:110px; height:110px; display:flex; align-items:center; justify-content:center;}
+  .radar-ring{
+    position:absolute; border-radius:50%; border:1px solid var(--teal);
+    width:100%; height:100%; opacity:0; animation:radar-pulse 3s ease-out infinite;
+  }
+  .radar-ring.r2{animation-delay:1s;}
+  .radar-ring.r3{animation-delay:2s;}
+  @keyframes radar-pulse{
+    0%{transform:scale(0.2); opacity:0.8;}
+    100%{transform:scale(1.6); opacity:0;}
+  }
+  .radar-pin{
+    font-size:1.8rem; z-index:2; animation:pin-bounce 2.4s ease-in-out infinite;
+    filter:drop-shadow(0 0 12px rgba(53,224,176,0.6));
+  }
+  @keyframes pin-bounce{0%,100%{transform:translateY(0);}50%{transform:translateY(-10px);}}
+  .address-big{text-align:center; position:relative; z-index:1;}
+  .address-eyebrow{font-family:'JetBrains Mono'; font-size:0.75rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--teal); margin-bottom:12px;}
+  .address-text{font-size:1.02rem; line-height:1.7; color:var(--text); max-width:320px;}
+
+  .info-card{background:var(--surface); border:1px solid var(--line); border-radius:16px; padding:32px; display:flex; flex-direction:column; gap:20px;}
+  .info-row{display:flex; gap:14px; align-items:flex-start;}
+  .info-icon{
+    width:36px;height:36px;border-radius:10px; background:rgba(53,224,176,0.1); border:1px solid rgba(53,224,176,0.3);
+    display:flex; align-items:center; justify-content:center; color:var(--teal); flex-shrink:0; font-size:0.95rem;
+  }
+  .info-row b{display:block; font-size:0.85rem; margin-bottom:3px;}
+  .info-row span{color:var(--muted); font-size:0.88rem; line-height:1.5;}
+  .action-row{display:flex; gap:12px; flex-wrap:wrap; margin-top:6px;}
+  .chip{
+    padding:9px 16px; border-radius:999px; border:1px solid var(--line-strong); font-size:0.82rem; color:var(--muted);
+    transition:all .25s ease; display:inline-flex; align-items:center; gap:6px; cursor:pointer;
+  }
+  .chip:hover{border-color:var(--gold); color:var(--gold); transform:translateY(-2px);}
+
+  /* CTA footer */
+  .cta-final{
+    text-align:center; padding:90px 0 60px;
+  }
+  .cta-final h2{font-size:clamp(1.9rem,4vw,2.7rem); margin-bottom:18px; font-weight:700;}
+  .cta-final p{color:var(--muted); max-width:480px; margin:0 auto 34px; line-height:1.6;}
+
+  footer{border-top:1px solid var(--line); padding:36px 0; text-align:center; color:var(--muted); font-size:0.82rem;}
+  footer .brand{justify-content:center; margin-bottom:10px;}
+
+  ::selection{background:var(--gold); color:#161207;}
+
+  /* ===== Responsive refinement: laptop / tablet / mobile ===== */
+  @media (max-width:1024px){
+    .wrap{padding:0 24px;}
+    section{padding:80px 0;}
+  }
+  @media (max-width:900px){
+    .card-stage{height:auto; padding:20px 0 0;}
+    .hero{padding:70px 0 44px;}
+  }
+  @media (max-width:640px){
+    .wrap{padding:0 18px;}
+    nav .wrap{padding:14px 18px;}
+    section{padding:60px 0;}
+    .hero{padding:52px 0 36px;}
+    .hero h1{font-size:clamp(1.9rem, 8vw, 2.6rem); line-height:1.14;}
+    .hero p.lede{font-size:0.98rem; max-width:100%;}
+    .hero-actions{gap:10px;}
+    .btn{padding:13px 20px; font-size:0.88rem; flex:1 1 auto; justify-content:center;}
+    .hero-meta{gap:20px;}
+    .meta-num{font-size:1.2rem;}
+    .profile-card{padding:22px; width:100%;}
+    .section-title{font-size:clamp(1.4rem,6vw,1.9rem);}
+    .about-box{padding:24px;}
+    .about-box::after{font-size:5rem; top:0; right:14px;}
+    .grid-3{gap:16px;}
+    .service-card{padding:24px;}
+    .stat-cell{padding:22px 14px;}
+    .stat-num{font-size:1.6rem;}
+    .address-stage{min-height:auto; padding:30px 22px;}
+    .info-card{padding:24px;}
+    .chip{padding:8px 13px; font-size:0.78rem;}
+    .cta-final{padding:64px 0 44px;}
+    .cta-final .hero-actions{flex-direction:column;}
+    .cta-final .btn{width:100%;}
+    .float-dot{display:none;}
+  }
+  @media (max-width:380px){
+    .hero h1{font-size:1.65rem;}
+    .brand{font-size:0.95rem;}
+    .brand-mark{width:30px; height:30px; font-size:0.82rem;}
+    .lang-toggle{padding:2px;}
+    .lang-opt{padding:5px 9px; font-size:0.68rem;}
+  }
+
+  /* laptop / desktop large screens: cap line length & breathing room */
+  @media (min-width:1400px){
+    .wrap{max-width:1240px;}
+    .hero h1{font-size:3.9rem;}
+  }
+
+  @media (prefers-reduced-motion:reduce){
+    *{animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important;}
+  }
+</style>
+</head>
+<body>
+
+<div class="grid-bg"></div>
+<div class="glow-orb orb-1"></div>
+<div class="glow-orb orb-2"></div>
+
+<nav>
+  <div class="wrap">
+    <div class="brand"><div class="brand-mark">NM</div>Nexy Metrhon</div>
+    <div class="navlinks">
+      <a href="#tentang" data-i18n="nav.tentang">Tentang</a>
+      <a href="#layanan" data-i18n="nav.layanan">Layanan</a>
+      <a href="#lokasi" data-i18n="nav.lokasi">Lokasi</a>
+    </div>
+    <div class="nav-right">
+      <div class="lang-toggle" id="langToggle">
+        <span class="lang-opt active" data-lang="id">ID</span>
+        <span class="lang-opt" data-lang="en">EN</span>
+      </div>
+      <a href="#pesan" class="nav-cta" data-i18n="nav.cta">Pesan Sekarang</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Buka menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="wrap">
+      <a href="#tentang" data-i18n="nav.tentang">Tentang</a>
+      <a href="#layanan" data-i18n="nav.layanan">Layanan</a>
+      <a href="#lokasi" data-i18n="nav.lokasi">Lokasi</a>
+    </div>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <!-- HERO -->
+  <section class="hero">
+    <span class="float-dot fd-1"></span>
+    <span class="float-dot fd-2"></span>
+    <span class="float-dot fd-3"></span>
+    <span class="float-dot fd-4"></span>
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow"><span class="dot"></span><span data-i18n="hero.eyebrow">Website &amp; Aplikasi Custom</span></div>
+        <h1 id="heroTitle">
+          <span class="word-anim" style="animation-delay:.05s">Website</span>
+          <span class="word-anim" style="animation-delay:.12s">yang</span>
+          <span class="word-anim accent" style="animation-delay:.19s">bekerja</span>
+          <span class="word-anim" style="animation-delay:.26s">untuk</span>
+          <span class="word-anim" style="animation-delay:.33s">bisnis</span>
+          <span class="word-anim" style="animation-delay:.40s">kamu,</span>
+          <span class="word-anim" style="animation-delay:.47s">bukan</span>
+          <span class="word-anim" style="animation-delay:.54s">cuma</span>
+          <span class="word-anim" style="animation-delay:.61s">tampil</span>
+          <span class="word-anim" style="animation-delay:.68s">bagus.</span>
+        </h1>
+        <p class="lede" data-i18n="hero.lede">Nexy Metrhon merancang website dan aplikasi dengan tampilan profesional, interaktif, dan fitur yang bisa dikustom sesuai kebutuhan — dengan biaya terjangkau dan pengerjaan cepat.</p>
+        <div class="hero-actions">
+          <a href="#pesan" class="btn btn-primary" data-i18n="hero.btn1">Order Sekarang →</a>
+          <a href="#lokasi" class="btn btn-ghost" data-i18n="hero.btn2">Lihat Lokasi Studio</a>
+        </div>
+        <div class="hero-meta">
+          <div class="meta-item"><span class="meta-num">5.0</span><span class="meta-label" data-i18n="hero.meta1">RATING GOOGLE</span></div>
+          <div class="meta-item"><span class="meta-num">289+</span><span class="meta-label" data-i18n="hero.meta2">PROFILE VIEWS</span></div>
+          <div class="meta-item"><span class="meta-num" data-i18n="hero.meta3num">24 Jam</span><span class="meta-label" data-i18n="hero.meta3">RESPON CEPAT</span></div>
+        </div>
+      </div>
+
+      <div class="card-stage">
+        <div class="profile-card">
+          <div class="pc-top">
+            <div class="pc-avatar">NM</div>
+            <div class="pc-views">289 views<br>this month</div>
+          </div>
+          <div class="pc-name">Nexy Metrhon</div>
+          <div class="pc-role">Website Designer · Batubulan, Gianyar</div>
+          <div class="pc-rating">
+            <span class="stars">★★★★★</span>
+            <span class="pc-rating-num">5.0</span>
+            <span class="pc-rating-count">Google Rating</span>
+          </div>
+          <div class="pc-divider"></div>
+          <div class="pc-row"><span data-i18n="pc.row1">Layanan</span><b>Web &amp; App Custom</b></div>
+          <div class="pc-row"><span data-i18n="pc.row2">Pengerjaan</span><b data-i18n="pc.row2val">Cepat</b></div>
+          <div class="pc-row"><span data-i18n="pc.row3">Biaya</span><b data-i18n="pc.row3val">Terjangkau</b></div>
+          <div class="pc-status"><span class="dot"></span>Closed · Opens 8.30 AM Mon</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="tentang">
+    <div class="section-label reveal" data-i18n="about.label">// Dari Pemilik</div>
+    <h2 class="section-title reveal" data-i18n="about.title">Studio digital dengan hasil yang bisa diandalkan</h2>
+    <p class="section-sub reveal" data-i18n="about.sub">Cerita singkat tentang siapa kami dan bagaimana kami bekerja.</p>
+    <div class="about-box reveal">
+      <p data-i18n="about.body">Nexy Metrhon menyediakan jasa pembuatan website dan aplikasi dengan desain yang profesional serta interaktif. Setiap proyek bisa dikustom dengan fitur sendiri sesuai kebutuhan bisnismu, dengan biaya yang terjangkau dan waktu pengerjaan yang cepat. Tunggu apalagi — yuk order sekarang!</p>
+      <div class="about-sign"><span data-i18n="about.sign">— Pemilik Nexy Metrhon</span> · Batubulan, Bali</div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="layanan" style="position:relative;">
+    <span class="float-dot fd-1" style="top:0;"></span>
+    <span class="float-dot fd-4" style="bottom:0; right:2%;"></span>
+    <div class="section-label reveal" data-i18n="services.label">// Layanan</div>
+    <h2 class="section-title reveal" data-i18n="services.title">Yang bisa kami kerjakan</h2>
+    <p class="section-sub reveal" data-i18n="services.sub">Dari landing page sederhana sampai aplikasi dengan fitur khusus, kami sesuaikan dengan kebutuhan dan budget kamu.</p>
+    <div class="grid-3">
+      <div class="service-card reveal">
+        <div class="service-icon">◧</div>
+        <h3 data-i18n="services.card1.title">Pembuatan Website</h3>
+        <p data-i18n="services.card1.body">Website profesional untuk bisnis, personal, maupun komunitas — tampil rapi di desktop dan mobile.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">◨</div>
+        <h3 data-i18n="services.card2.title">Aplikasi Custom</h3>
+        <p data-i18n="services.card2.body">Aplikasi dengan fitur yang dirancang khusus sesuai alur kerja dan kebutuhan bisnismu.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">✧</div>
+        <h3 data-i18n="services.card3.title">Desain Interaktif</h3>
+        <p data-i18n="services.card3.body">Tampilan modern dan interaktif yang membuat pengunjung betah dan mudah memahami produkmu.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section>
+    <div class="stats-strip reveal">
+      <div class="stat-cell"><div class="stat-num" data-count="5.0">0</div><div class="stat-label" data-i18n="stats.l1">Rating Google</div></div>
+      <div class="stat-cell"><div class="stat-num" data-count="24">0</div><div class="stat-label" data-i18n="stats.l2">Jam Respon</div></div>
+      <div class="stat-cell"><div class="stat-num" data-count="289" data-suffix="+">0</div><div class="stat-label" data-i18n="stats.l3">Kunjungan Profil</div></div>
+      <div class="stat-cell"><div class="stat-num" data-count="100" data-suffix="%">0</div><div class="stat-label" data-i18n="stats.l4">Custom Fitur</div></div>
+    </div>
+  </section>
+
+  <!-- LOCATION -->
+  <section id="lokasi">
+    <div class="section-label reveal" data-i18n="loc.label">// Lokasi Studio</div>
+    <h2 class="section-title reveal" data-i18n="loc.title">Datang langsung atau hubungi kami</h2>
+    <p class="section-sub reveal" data-i18n="loc.sub">Studio kami berada di Batubulan, Gianyar — pusat kerajinan dan kreatif Bali.</p>
+    <div class="location-grid">
+      <div class="address-stage reveal">
+        <div class="radar">
+          <span class="radar-ring r1"></span>
+          <span class="radar-ring r2"></span>
+          <span class="radar-ring r3"></span>
+          <div class="radar-pin">📍</div>
+        </div>
+        <div class="address-big">
+          <div class="address-eyebrow" data-i18n="loc.addrLabel">Alamat Studio</div>
+          <div class="address-text">Jl. Pratu Made Rambug Gg. Medori No.32,<br>Batubulan, Kec. Sukawati,<br>Kabupaten Gianyar, Bali 80582</div>
+        </div>
+      </div>
+      <div class="info-card reveal">
+        <div class="info-row">
+          <div class="info-icon">🕒</div>
+          <div><b data-i18n="loc.hours">Jam Buka</b><span>Closed · Opens 8.30 AM Mon</span></div>
+        </div>
+        <div class="info-row">
+          <div class="info-icon">📞</div>
+          <div><b data-i18n="loc.phone">Telepon</b><span class="mono">0858-5764-3401</span></div>
+        </div>
+        <div class="info-row">
+          <div class="info-icon">＃</div>
+          <div><b data-i18n="loc.pluscode">Plus Code</b><span class="mono">9769+M9 Batubulan</span></div>
+        </div>
+        <div class="action-row">
+          <span class="chip" data-i18n="loc.chip1">↗ Arah</span>
+          <span class="chip" data-i18n="loc.chip2">☆ Simpan</span>
+          <span class="chip" data-i18n="loc.chip3">⇧ Bagikan</span>
+          <span class="chip" data-i18n="loc.chip4">📱 Kirim ke HP</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section id="pesan" class="cta-final">
+    <div class="section-label reveal" style="justify-content:center; display:flex;" data-i18n="cta.label">// Mulai Proyekmu</div>
+    <h2 class="reveal" data-i18n="cta.title">Siap punya website yang layak dibanggakan?</h2>
+    <p class="reveal" data-i18n="cta.sub">Hubungi Nexy Metrhon sekarang dan ceritakan kebutuhan bisnismu — kami bantu wujudkan dari desain sampai fitur custom.</p>
+    <div class="hero-actions reveal" style="justify-content:center;">
+      <a href="https://wa.me/6285857643401" target="_blank" class="btn btn-primary" data-i18n="cta.btn1">Chat WhatsApp →</a>
+      <a href="tel:085857643401" class="btn btn-ghost" data-i18n="cta.btn2">Telepon Langsung</a>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="brand"><div class="brand-mark">NM</div>Nexy Metrhon</div>
+    <div data-i18n="footer.line">Website Designer · Batubulan, Gianyar, Bali · © 2026</div>
+  </div>
+</footer>
+
+<script>
+  // mobile nav toggle
+  const navToggle = document.getElementById('navToggle');
+  const mobileMenu = document.getElementById('mobileMenu');
+  navToggle.addEventListener('click', ()=>{
+    navToggle.classList.toggle('open');
+    mobileMenu.classList.toggle('open');
+  });
+  mobileMenu.querySelectorAll('a').forEach(a=>{
+    a.addEventListener('click', ()=>{
+      navToggle.classList.remove('open');
+      mobileMenu.classList.remove('open');
+    });
+  });
+
+  // ===== ID / EN language switch =====
+  const translations = {
+    'nav.tentang':      {id:'Tentang', en:'About'},
+    'nav.layanan':      {id:'Layanan', en:'Services'},
+    'nav.lokasi':       {id:'Lokasi', en:'Location'},
+    'nav.cta':          {id:'Pesan Sekarang', en:'Order Now'},
+    'hero.eyebrow':     {id:'Website & Aplikasi Custom', en:'Custom Websites & Apps'},
+    'hero.lede':        {id:'Nexy Metrhon merancang website dan aplikasi dengan tampilan profesional, interaktif, dan fitur yang bisa dikustom sesuai kebutuhan — dengan biaya terjangkau dan pengerjaan cepat.', en:'Nexy Metrhon designs websites and apps with a professional, interactive look and fully customizable features — at an affordable price and fast turnaround.'},
+    'hero.btn1':        {id:'Order Sekarang →', en:'Order Now →'},
+    'hero.btn2':        {id:'Lihat Lokasi Studio', en:'View Studio Location'},
+    'hero.meta1':       {id:'RATING GOOGLE', en:'GOOGLE RATING'},
+    'hero.meta2':       {id:'PROFILE VIEWS', en:'PROFILE VIEWS'},
+    'hero.meta3num':    {id:'24 Jam', en:'24 Hours'},
+    'hero.meta3':       {id:'RESPON CEPAT', en:'FAST RESPONSE'},
+    'pc.row1':          {id:'Layanan', en:'Service'},
+    'pc.row2':          {id:'Pengerjaan', en:'Delivery'},
+    'pc.row2val':       {id:'Cepat', en:'Fast'},
+    'pc.row3':          {id:'Biaya', en:'Price'},
+    'pc.row3val':       {id:'Terjangkau', en:'Affordable'},
+    'about.label':      {id:'// Dari Pemilik', en:'// From the Owner'},
+    'about.title':      {id:'Studio digital dengan hasil yang bisa diandalkan', en:'A digital studio with results you can rely on'},
+    'about.sub':        {id:'Cerita singkat tentang siapa kami dan bagaimana kami bekerja.', en:'A short story about who we are and how we work.'},
+    'about.body':       {id:'Nexy Metrhon menyediakan jasa pembuatan website dan aplikasi dengan desain yang profesional serta interaktif. Setiap proyek bisa dikustom dengan fitur sendiri sesuai kebutuhan bisnismu, dengan biaya yang terjangkau dan waktu pengerjaan yang cepat. Tunggu apalagi — yuk order sekarang!', en:'Nexy Metrhon provides website and app development with a professional, interactive design. Every project can be customized with your own features, at an affordable cost and fast turnaround time. What are you waiting for — order now!'},
+    'about.sign':       {id:'— Pemilik Nexy Metrhon', en:'— Nexy Metrhon Owner'},
+    'services.label':   {id:'// Layanan', en:'// Services'},
+    'services.title':   {id:'Yang bisa kami kerjakan', en:'What we can build for you'},
+    'services.sub':     {id:'Dari landing page sederhana sampai aplikasi dengan fitur khusus, kami sesuaikan dengan kebutuhan dan budget kamu.', en:'From a simple landing page to an app with custom features, we tailor it to your needs and budget.'},
+    'services.card1.title': {id:'Pembuatan Website', en:'Website Development'},
+    'services.card1.body':  {id:'Website profesional untuk bisnis, personal, maupun komunitas — tampil rapi di desktop dan mobile.', en:'Professional websites for business, personal, or community use — looking sharp on desktop and mobile.'},
+    'services.card2.title': {id:'Aplikasi Custom', en:'Custom Applications'},
+    'services.card2.body':  {id:'Aplikasi dengan fitur yang dirancang khusus sesuai alur kerja dan kebutuhan bisnismu.', en:'Applications with features tailored specifically to your workflow and business needs.'},
+    'services.card3.title': {id:'Desain Interaktif', en:'Interactive Design'},
+    'services.card3.body':  {id:'Tampilan modern dan interaktif yang membuat pengunjung betah dan mudah memahami produkmu.', en:'A modern, interactive look that keeps visitors engaged and makes your product easy to understand.'},
+    'stats.l1':         {id:'Rating Google', en:'Google Rating'},
+    'stats.l2':         {id:'Jam Respon', en:'Response Hours'},
+    'stats.l3':         {id:'Kunjungan Profil', en:'Profile Visits'},
+    'stats.l4':         {id:'Custom Fitur', en:'Custom Features'},
+    'loc.label':        {id:'// Lokasi Studio', en:'// Studio Location'},
+    'loc.title':        {id:'Datang langsung atau hubungi kami', en:'Visit us or get in touch'},
+    'loc.sub':          {id:'Studio kami berada di Batubulan, Gianyar — pusat kerajinan dan kreatif Bali.', en:'Our studio is located in Batubulan, Gianyar — the heart of Bali\'s craft and creative scene.'},
+    'loc.addrLabel':    {id:'Alamat Studio', en:'Studio Address'},
+    'loc.hours':        {id:'Jam Buka', en:'Opening Hours'},
+    'loc.phone':        {id:'Telepon', en:'Phone'},
+    'loc.pluscode':     {id:'Plus Code', en:'Plus Code'},
+    'loc.chip1':        {id:'↗ Arah', en:'↗ Directions'},
+    'loc.chip2':        {id:'☆ Simpan', en:'☆ Save'},
+    'loc.chip3':        {id:'⇧ Bagikan', en:'⇧ Share'},
+    'loc.chip4':        {id:'📱 Kirim ke HP', en:'📱 Send to Phone'},
+    'cta.label':        {id:'// Mulai Proyekmu', en:'// Start Your Project'},
+    'cta.title':        {id:'Siap punya website yang layak dibanggakan?', en:'Ready for a website you\'ll be proud of?'},
+    'cta.sub':          {id:'Hubungi Nexy Metrhon sekarang dan ceritakan kebutuhan bisnismu — kami bantu wujudkan dari desain sampai fitur custom.', en:'Contact Nexy Metrhon now and tell us about your business needs — we\'ll help bring it to life, from design to custom features.'},
+    'cta.btn1':         {id:'Chat WhatsApp →', en:'Chat on WhatsApp →'},
+    'cta.btn2':         {id:'Telepon Langsung', en:'Call Now'},
+    'footer.line':      {id:'Website Designer · Batubulan, Gianyar, Bali · © 2026', en:'Website Designer · Batubulan, Gianyar, Bali · © 2026'}
+  };
+
+  const heroWordsID = [
+    {t:'Website', d:'.05s'}, {t:'yang', d:'.12s'}, {t:'bekerja', d:'.19s', accent:true},
+    {t:'untuk', d:'.26s'}, {t:'bisnis', d:'.33s'}, {t:'kamu,', d:'.40s'},
+    {t:'bukan', d:'.47s'}, {t:'cuma', d:'.54s'}, {t:'tampil', d:'.61s'}, {t:'bagus.', d:'.68s'}
+  ];
+  const heroWordsEN = [
+    {t:'A', d:'.05s'}, {t:'website', d:'.12s'}, {t:'that', d:'.19s'}, {t:'actually', d:'.26s', accent:true},
+    {t:'works', d:'.33s', accent:true}, {t:'for', d:'.40s'}, {t:'your', d:'.47s'}, {t:'business,', d:'.54s'},
+    {t:'not', d:'.61s'}, {t:'just', d:'.68s'}, {t:'looks', d:'.75s'}, {t:'good.', d:'.82s'}
+  ];
+
+  function renderHeroTitle(lang){
+    const words = lang === 'en' ? heroWordsEN : heroWordsID;
+    const html = words.map(w=>{
+      const cls = w.accent ? 'word-anim accent' : 'word-anim';
+      return `<span class="${cls}" style="animation-delay:${w.d}">${w.t}</span>`;
+    }).join('\n');
+    document.getElementById('heroTitle').innerHTML = html;
+  }
+
+  function setLang(lang){
+    document.documentElement.lang = lang;
+    document.querySelectorAll('[data-i18n]').forEach(el=>{
+      const key = el.getAttribute('data-i18n');
+      if(translations[key]) el.textContent = translations[key][lang];
+    });
+    renderHeroTitle(lang);
+    document.querySelectorAll('.lang-opt').forEach(opt=>{
+      opt.classList.toggle('active', opt.dataset.lang === lang);
+    });
+  }
+
+  document.querySelectorAll('.lang-opt').forEach(opt=>{
+    opt.addEventListener('click', ()=> setLang(opt.dataset.lang));
+  });
+
+  // scroll fade-up reveal
+  const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){
+        e.target.classList.add('in');
+        observer.unobserve(e.target);
+      }
+    });
+  },{threshold:0.15, rootMargin:'0px 0px -60px 0px'});
+  document.querySelectorAll('.reveal').forEach((el,i)=>{
+    el.style.transitionDelay = (i%3)*0.08 + 's';
+    observer.observe(el);
+  });
+
+  // parallax background: grid + glow orbs move at different speeds on scroll
+  const gridBg = document.querySelector('.grid-bg');
+  const orb1 = document.querySelector('.orb-1');
+  const orb2 = document.querySelector('.orb-2');
+  let ticking = false;
+  window.addEventListener('scroll', ()=>{
+    if(!ticking){
+      requestAnimationFrame(()=>{
+        const y = window.scrollY;
+        gridBg.style.transform = `translateY(${y * 0.08}px)`;
+        orb1.style.transform = `translate(${y * 0.05}px, ${y * 0.12}px)`;
+        orb2.style.transform = `translate(${-y * 0.04}px, ${-y * 0.08}px)`;
+        ticking = false;
+      });
+      ticking = true;
+    }
+  });
+
+  // count-up animation for stat numbers once visible
+  const countObserver = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){
+        const el = entry.target;
+        const target = parseFloat(el.dataset.count);
+        const suffix = el.dataset.suffix || '';
+        const isDecimal = el.dataset.count.includes('.');
+        const duration = 1400;
+        const start = performance.now();
+        function tick(now){
+          const progress = Math.min((now - start) / duration, 1);
+          const eased = 1 - Math.pow(1 - progress, 3);
+          const current = target * eased;
+          el.textContent = (isDecimal ? current.toFixed(1) : Math.round(current)) + suffix;
+          if(progress < 1) requestAnimationFrame(tick);
+        }
+        requestAnimationFrame(tick);
+        countObserver.unobserve(el);
+      }
+    });
+  },{threshold:0.5});
+  document.querySelectorAll('.stat-num[data-count]').forEach(el=>countObserver.observe(el));
+</script>
+
+</body>
+</html>
